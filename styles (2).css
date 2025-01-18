@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url('assets/pexels-a-darmel-8164382.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    margin: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    max-width: 400px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button:active {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 600px) {
+    .button {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+}
